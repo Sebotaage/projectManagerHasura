@@ -7,3 +7,18 @@ export const getUsers = gql`
     }
   }
 `;
+
+export const getProjects = gql`
+query getProjects{
+  projects {
+    name
+    stage
+    auth
+    backend
+    css
+    database
+    description
+    frontend
+    git
+  }
+}`;
